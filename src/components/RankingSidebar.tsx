@@ -2,6 +2,7 @@ import { Flame } from "lucide-react";
 import type { Tool } from "@/types/tool";
 import { CATEGORY_NAMES } from "@/types/tool";
 import StarRating from "@/components/StarRating";
+import ToolIcon from "@/components/ToolIcon";
 
 interface RankingSidebarProps {
   tools: Tool[];
@@ -42,9 +43,12 @@ export default function RankingSidebar({ tools }: RankingSidebarProps) {
                 </span>
 
                 {/* Icon */}
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-muted text-sm leading-none">
-                  {tool.icon}
-                </span>
+                <ToolIcon
+                  iconUrl={tool.iconUrl}
+                  fallbackEmoji={tool.icon}
+                  name={tool.name}
+                  size="xs"
+                />
 
                 {/* Name + category */}
                 <div className="min-w-0 flex-1">

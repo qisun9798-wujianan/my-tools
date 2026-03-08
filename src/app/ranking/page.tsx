@@ -3,6 +3,7 @@ import toolsData from "@/data/tools.json";
 import type { Tool } from "@/types/tool";
 import { CATEGORY_COLORS, CATEGORY_NAMES } from "@/types/tool";
 import StarRating from "@/components/StarRating";
+import ToolIcon from "@/components/ToolIcon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -96,9 +97,13 @@ export default function RankingPage() {
                 </div>
 
                 {/* Icon */}
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-background/80 text-2xl shadow-sm ring-1 ring-border/40">
-                  {tool.icon}
-                </span>
+                <ToolIcon
+                  iconUrl={tool.iconUrl}
+                  fallbackEmoji={tool.icon}
+                  name={tool.name}
+                  size="lg"
+                  className="bg-background/80 shadow-sm"
+                />
 
                 {/* Info */}
                 <div className="flex flex-1 flex-col gap-1 min-w-0">

@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import type { Tool } from "@/types/tool";
 import { CATEGORY_COLORS, CATEGORY_NAMES } from "@/types/tool";
 import StarRating from "@/components/StarRating";
+import ToolIcon from "@/components/ToolIcon";
 
 interface ToolCardProps {
   tool: Tool;
@@ -23,9 +24,13 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
       {/* Icon + Arrow */}
       <div className="mb-2.5 flex items-start justify-between">
-        <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-lg ring-1 ring-border/40 group-hover:ring-primary/30 transition-all duration-300">
-          {tool.icon}
-        </span>
+        <ToolIcon
+          iconUrl={tool.iconUrl}
+          fallbackEmoji={tool.icon}
+          name={tool.name}
+          size="md"
+          className="group-hover:ring-primary/30 transition-all duration-300"
+        />
         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted/80 text-muted-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
           <ArrowUpRight className="h-3 w-3 transition-transform duration-300 group-hover:rotate-12" />
         </span>

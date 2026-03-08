@@ -3,7 +3,8 @@ export interface Tool {
   name: string;
   description: string;
   url: string;
-  icon: string;
+  icon: string;        // emoji fallback
+  iconUrl?: string;    // official favicon URL
   category: string;
   tags?: string[];
   rating: number;
