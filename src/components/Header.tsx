@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/",       label: "首页" },
   { href: "/tools",  label: "工具导航" },
   { href: "/news",   label: "资讯" },
+  { href: "/about",  label: "关于作者" },
 ];
 
 export default function Header() {
