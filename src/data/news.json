@@ -1,0 +1,192 @@
+{
+  "tags": [
+    { "id": "all",      "name": "全部" },
+    { "id": "model",    "name": "大模型" },
+    { "id": "product",  "name": "产品更新" },
+    { "id": "industry", "name": "行业动态" },
+    { "id": "research", "name": "研究报告" },
+    { "id": "open",     "name": "开源项目" }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "GPT-4o 迎来重大更新，图像理解与实时语音能力全面升级",
+      "summary": "OpenAI 宣布 GPT-4o 多项改进，图像分析精度提升 40%，语音对话延迟降至 200ms 以内，多语言支持进一步扩展至 50 种语言。",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/blog",
+      "date": "2026-03-07",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": true
+    },
+    {
+      "id": "2",
+      "title": "DeepSeek V3 开源版本发布，推理速度提升 3 倍",
+      "summary": "深度求索正式开放 DeepSeek V3 完整权重下载，支持本地部署，推理性能大幅超越上一代，在数学推理、代码生成方面尤为突出。",
+      "source": "DeepSeek 官方",
+      "url": "https://deepseek.com",
+      "date": "2026-03-06",
+      "tag": "open",
+      "tagName": "开源项目",
+      "tagColor": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300",
+      "hot": true
+    },
+    {
+      "id": "3",
+      "title": "Sora 正式向全球用户开放，视频时长最高支持 3 分钟",
+      "summary": "OpenAI Sora 结束内测，ChatGPT Plus 用户可直接使用，支持 1080P 高清输出，新增镜头衔接、场景切换等专业级功能。",
+      "source": "The Verge",
+      "url": "https://theverge.com",
+      "date": "2026-03-06",
+      "tag": "industry",
+      "tagName": "行业动态",
+      "tagColor": "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300",
+      "hot": true
+    },
+    {
+      "id": "4",
+      "title": "Google 发布 Gemini 2.0 Ultra，多模态能力全面领先",
+      "summary": "Gemini 2.0 Ultra 在 MMMU、HumanEval 等多项基准测试中刷新 SOTA，支持百万 Token 上下文窗口，原生支持代码执行与工具调用。",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google",
+      "date": "2026-03-05",
+      "tag": "model",
+      "tagName": "大模型",
+      "tagColor": "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
+      "hot": false
+    },
+    {
+      "id": "5",
+      "title": "Cursor 编辑器月活突破 500 万，获 1 亿美元 B 轮融资",
+      "summary": "AI 编程工具 Cursor 披露最新数据，月活跃用户超 500 万，本轮融资由 a16z 领投，估值达 25 亿美元，将加速团队扩张与产品迭代。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com",
+      "date": "2026-03-05",
+      "tag": "industry",
+      "tagName": "行业动态",
+      "tagColor": "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300",
+      "hot": false
+    },
+    {
+      "id": "6",
+      "title": "Anthropic 发布 Claude 3.7 Sonnet，代码能力超越 GPT-4o",
+      "summary": "Claude 3.7 Sonnet 在 SWE-bench Verified 中获 62.3% 得分，成为代码任务最强模型之一，同时引入「扩展思考」模式应对复杂推理场景。",
+      "source": "Anthropic",
+      "url": "https://anthropic.com",
+      "date": "2026-03-04",
+      "tag": "model",
+      "tagName": "大模型",
+      "tagColor": "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
+      "hot": true
+    },
+    {
+      "id": "7",
+      "title": "2026 AI 工具市场报告：全球用户规模突破 10 亿",
+      "summary": "麦肯锡最新报告显示，AI 工具渗透率在知识工作者中达 78%，效率平均提升 35%，预计 2026 年全球 AI 软件市场规模将达 2000 亿美元。",
+      "source": "McKinsey & Company",
+      "url": "https://mckinsey.com",
+      "date": "2026-03-04",
+      "tag": "research",
+      "tagName": "研究报告",
+      "tagColor": "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+      "hot": false
+    },
+    {
+      "id": "8",
+      "title": "字节跳动 Seedance 视频生成模型开放公测，效果惊艳",
+      "summary": "Seedance 支持最长 60 秒、4K 分辨率视频生成，动作连贯性和细节还原度受到广泛好评，内测用户已超 100 万。",
+      "source": "36氪",
+      "url": "https://36kr.com",
+      "date": "2026-03-03",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": false
+    },
+    {
+      "id": "9",
+      "title": "ElevenLabs 推出实时语音克隆 API，延迟低至 150ms",
+      "summary": "开发者可通过新 API 实现低延迟实时语音转换，支持 30 种语言，精准还原音色特征，面向播客、游戏、有声内容领域开放商业授权。",
+      "source": "ElevenLabs Blog",
+      "url": "https://elevenlabs.io",
+      "date": "2026-03-03",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": false
+    },
+    {
+      "id": "10",
+      "title": "Mistral AI 发布 Mistral Large 3，开源可商用",
+      "summary": "Mistral Large 3 参数量 1230 亿，在多语言理解和数学推理上表现出色，采用 Apache 2.0 协议，可免费商用，向量搜索能力大幅提升。",
+      "source": "Mistral AI",
+      "url": "https://mistral.ai",
+      "date": "2026-03-02",
+      "tag": "open",
+      "tagName": "开源项目",
+      "tagColor": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300",
+      "hot": false
+    },
+    {
+      "id": "11",
+      "title": "GitHub Copilot 新增 Agent 模式，可自主完成复杂编程任务",
+      "summary": "GitHub 推出 Copilot Workspace Agent，能理解 Issue 并自动生成完整 PR，包含单元测试和文档，显著降低开发者维护成本。",
+      "source": "GitHub Blog",
+      "url": "https://github.blog",
+      "date": "2026-03-01",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": false
+    },
+    {
+      "id": "12",
+      "title": "Midjourney V7 发布，支持风格一致性与角色锁定",
+      "summary": "V7 版本新增角色一致性、场景锁定、局部重绘等专业功能，商业用途版权保护更完善，支持批量生成与风格迁移，广受设计师好评。",
+      "source": "Midjourney",
+      "url": "https://midjourney.com",
+      "date": "2026-02-28",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": false
+    },
+    {
+      "id": "13",
+      "title": "Meta 发布 LLaMA 4 系列，支持 100 万 Token 上下文",
+      "summary": "LLaMA 4 采用混合专家架构（MoE），在保持开源的同时达到 GPT-4 级别性能，支持超长上下文，代码与推理能力大幅提升。",
+      "source": "Meta AI",
+      "url": "https://ai.meta.com",
+      "date": "2026-02-27",
+      "tag": "open",
+      "tagName": "开源项目",
+      "tagColor": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300",
+      "hot": true
+    },
+    {
+      "id": "14",
+      "title": "斯坦福 AI 指数报告：中国 AI 论文数量首次超越美国",
+      "summary": "2026 年斯坦福 AI 指数显示，中国在 AI 顶会论文数量占比达 31%，首超美国。全球 AI 投资同比增长 65%，达到历史新高。",
+      "source": "Stanford HAI",
+      "url": "https://hai.stanford.edu",
+      "date": "2026-02-26",
+      "tag": "research",
+      "tagName": "研究报告",
+      "tagColor": "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+      "hot": false
+    },
+    {
+      "id": "15",
+      "title": "Perplexity AI 推出 Deep Research 功能，支持多轮自主搜索",
+      "summary": "Deep Research 可自主规划搜索路径，完成复杂研究任务，自动生成带引用的长篇报告，已向 Pro 用户开放，每天可使用 5 次。",
+      "source": "Perplexity Blog",
+      "url": "https://perplexity.ai",
+      "date": "2026-02-25",
+      "tag": "product",
+      "tagName": "产品更新",
+      "tagColor": "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+      "hot": false
+    }
+  ]
+}

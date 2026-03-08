@@ -1,12 +1,12 @@
 {
   "categories": [
-    { "id": "ai-chat",    "name": "AI 对话助手" },
-    { "id": "ai-code",    "name": "AI 编程工具" },
-    { "id": "ai-image",   "name": "AI 图像生成" },
-    { "id": "ai-video",   "name": "AI 视频生成" },
-    { "id": "ai-writing", "name": "AI 写作与笔记" },
-    { "id": "ai-audio",   "name": "AI 音频与语音" },
-    { "id": "ai-auto",    "name": "AI 效率与自动化" }
+    { "id": "ai-chat",    "name": "AI 对话助手", "icon": "💬", "description": "与 AI 对话，解决一切问题" },
+    { "id": "ai-code",    "name": "AI 编程工具", "icon": "👨‍💻", "description": "AI 加速代码编写与调试" },
+    { "id": "ai-image",   "name": "AI 图像生成", "icon": "🎨", "description": "文字描述生成精美图像" },
+    { "id": "ai-video",   "name": "AI 视频生成", "icon": "🎬", "description": "AI 制作专业级视频内容" },
+    { "id": "ai-writing", "name": "AI 写作与笔记", "icon": "✍️", "description": "辅助写作、笔记与内容创作" },
+    { "id": "ai-audio",   "name": "AI 音频与语音", "icon": "🎵", "description": "语音合成与 AI 音乐创作" },
+    { "id": "ai-auto",    "name": "AI 效率与自动化", "icon": "🔗", "description": "自动化工作流，解放双手" }
   ],
   "tools": [
     {
@@ -17,7 +17,8 @@
       "icon": "🤖",
       "category": "ai-chat",
       "tags": ["对话", "写作", "编程"],
-      "rating": 5
+      "rating": 5,
+      "addedDate": "2025-11-01"
     },
     {
       "id": "claude",
@@ -27,7 +28,8 @@
       "icon": "✨",
       "category": "ai-chat",
       "tags": ["对话", "分析", "编程"],
-      "rating": 5
+      "rating": 5,
+      "addedDate": "2025-11-05"
     },
     {
       "id": "gemini",
@@ -37,87 +39,8 @@
       "icon": "💎",
       "category": "ai-chat",
       "tags": ["多模态", "对话", "搜索"],
-      "rating": 4
-    },
-    {
-      "id": "deepseek",
-      "name": "DeepSeek",
-      "description": "国产顶级大模型，推理能力出色，开源版本媲美 GPT-4，API 价格极具竞争力。",
-      "url": "https://chat.deepseek.com",
-      "icon": "🌊",
-      "category": "ai-chat",
-      "tags": ["对话", "推理", "开源"],
-      "rating": 5
-    },
-    {
-      "id": "grok",
-      "name": "Grok",
-      "description": "xAI 出品的 AI 助手，具备实时 X（Twitter）信息检索能力，回答风格幽默直接。",
-      "url": "https://grok.x.ai",
-      "icon": "⚡",
-      "category": "ai-chat",
-      "tags": ["对话", "实时", "搜索"],
-      "rating": 4
-    },
-    {
-      "id": "doubao",
-      "name": "豆包",
-      "description": "字节跳动推出的 AI 助手，中文语境理解优秀，支持联网、图像理解，完全免费使用。",
-      "url": "https://www.doubao.com",
-      "icon": "🫘",
-      "category": "ai-chat",
-      "tags": ["对话", "中文", "免费"],
-      "rating": 4
-    },
-    {
-      "id": "perplexity",
-      "name": "Perplexity",
-      "description": "AI 驱动的搜索引擎，实时联网回答问题并提供信息来源引用，研究效率极高。",
-      "url": "https://www.perplexity.ai",
-      "icon": "🔍",
-      "category": "ai-chat",
-      "tags": ["搜索", "问答", "研究"],
-      "rating": 4
-    },
-    {
-      "id": "cursor",
-      "name": "Cursor",
-      "description": "AI 驱动的代码编辑器，内置强大的代码补全与智能重构能力，开发者首选 AI IDE。",
-      "url": "https://cursor.sh",
-      "icon": "🖱️",
-      "category": "ai-code",
-      "tags": ["编程", "代码", "IDE"],
-      "rating": 5
-    },
-    {
-      "id": "claude-code",
-      "name": "Claude Code",
-      "description": "Anthropic 推出的终端 AI 编程助手，可直接读写文件、执行命令，擅长大型代码库重构。",
-      "url": "https://claude.ai/code",
-      "icon": "🧑‍💻",
-      "category": "ai-code",
-      "tags": ["编程", "终端", "重构"],
-      "rating": 5
-    },
-    {
-      "id": "github-copilot",
-      "name": "GitHub Copilot",
-      "description": "GitHub 与 OpenAI 联合打造的 AI 编程助手，深度集成 VS Code，行内补全代码效率极高。",
-      "url": "https://github.com/features/copilot",
-      "icon": "🐙",
-      "category": "ai-code",
-      "tags": ["编程", "补全", "VS Code"],
-      "rating": 5
-    },
-    {
-      "id": "bolt-new",
-      "name": "Bolt.new",
-      "description": "浏览器内全栈 AI 开发环境，对话即可生成完整 Web 应用并一键部署，零门槛建站利器。",
-      "url": "https://bolt.new",
-      "icon": "⚡",
-      "category": "ai-code",
-      "tags": ["全栈", "建站", "部署"],
-      "rating": 4
+      "rating": 4,
+      "addedDate": "2025-11-10"
     },
     {
       "id": "midjourney",
@@ -127,67 +50,30 @@
       "icon": "🎨",
       "category": "ai-image",
       "tags": ["图像生成", "艺术", "设计"],
-      "rating": 5
+      "rating": 5,
+      "addedDate": "2025-11-15"
     },
     {
-      "id": "dalle3",
-      "name": "DALL·E 3",
-      "description": "OpenAI 的图像生成模型，集成于 ChatGPT，文字理解精准，能生成复杂场景和含文字的图像。",
-      "url": "https://openai.com/dall-e-3",
-      "icon": "🖼️",
-      "category": "ai-image",
-      "tags": ["图像生成", "OpenAI", "精准"],
-      "rating": 4
+      "id": "cursor",
+      "name": "Cursor",
+      "description": "AI 驱动的代码编辑器，内置强大的代码补全与智能重构能力，开发者首选 AI IDE。",
+      "url": "https://cursor.sh",
+      "icon": "🖱️",
+      "category": "ai-code",
+      "tags": ["编程", "代码", "IDE"],
+      "rating": 5,
+      "addedDate": "2025-11-20"
     },
     {
-      "id": "stable-diffusion",
-      "name": "Stable Diffusion",
-      "description": "最受欢迎的开源图像生成模型，可本地部署，社区生态丰富，定制化程度极高。",
-      "url": "https://stability.ai",
-      "icon": "🌌",
-      "category": "ai-image",
-      "tags": ["图像生成", "开源", "本地部署"],
-      "rating": 4
-    },
-    {
-      "id": "runway",
-      "name": "Runway",
-      "description": "专业 AI 视频生成与编辑平台，支持文字/图片转视频、抠图等功能，创意人首选。",
-      "url": "https://runwayml.com",
-      "icon": "🎬",
-      "category": "ai-video",
-      "tags": ["视频", "创意", "设计"],
-      "rating": 4
-    },
-    {
-      "id": "sora",
-      "name": "Sora",
-      "description": "OpenAI 发布的文字转视频模型，生成效果震撼，支持长达 60 秒高清视频，引领行业变革。",
-      "url": "https://sora.com",
-      "icon": "🎥",
-      "category": "ai-video",
-      "tags": ["视频生成", "OpenAI", "高清"],
-      "rating": 5
-    },
-    {
-      "id": "kling",
-      "name": "可灵 AI",
-      "description": "快手推出的 AI 视频生成工具，国产领先，支持图生视频、文生视频，效果细腻真实。",
-      "url": "https://klingai.com",
-      "icon": "🎞️",
-      "category": "ai-video",
-      "tags": ["视频生成", "国产", "图生视频"],
-      "rating": 4
-    },
-    {
-      "id": "seedance",
-      "name": "Seedance",
-      "description": "字节跳动推出的 AI 视频生成模型，动作连贯性出色，支持多镜头长视频生成。",
-      "url": "https://seedance.ai",
-      "icon": "🌱",
-      "category": "ai-video",
-      "tags": ["视频生成", "国产", "多镜头"],
-      "rating": 4
+      "id": "perplexity",
+      "name": "Perplexity",
+      "description": "AI 驱动的搜索引擎，实时联网回答问题并提供信息来源引用，研究效率极高。",
+      "url": "https://www.perplexity.ai",
+      "icon": "🔍",
+      "category": "ai-chat",
+      "tags": ["搜索", "问答", "研究"],
+      "rating": 4,
+      "addedDate": "2025-11-25"
     },
     {
       "id": "notionai",
@@ -197,17 +83,19 @@
       "icon": "📝",
       "category": "ai-writing",
       "tags": ["写作", "笔记", "效率"],
-      "rating": 3
+      "rating": 3,
+      "addedDate": "2025-12-01"
     },
     {
-      "id": "jasper",
-      "name": "Jasper",
-      "description": "专为内容营销团队打造的 AI 写作平台，支持品牌语调定制，批量生成博客、广告文案。",
-      "url": "https://www.jasper.ai",
-      "icon": "✍️",
-      "category": "ai-writing",
-      "tags": ["写作", "营销", "文案"],
-      "rating": 3
+      "id": "runway",
+      "name": "Runway",
+      "description": "专业 AI 视频生成与编辑平台，支持文字/图片转视频、抠图等功能，创意人首选。",
+      "url": "https://runwayml.com",
+      "icon": "🎬",
+      "category": "ai-video",
+      "tags": ["视频", "创意", "设计"],
+      "rating": 4,
+      "addedDate": "2025-12-05"
     },
     {
       "id": "elevenlabs",
@@ -217,7 +105,8 @@
       "icon": "🎙️",
       "category": "ai-audio",
       "tags": ["语音合成", "声音克隆", "配音"],
-      "rating": 5
+      "rating": 5,
+      "addedDate": "2025-12-10"
     },
     {
       "id": "suno",
@@ -227,7 +116,19 @@
       "icon": "🎵",
       "category": "ai-audio",
       "tags": ["音乐生成", "歌曲", "创作"],
-      "rating": 5
+      "rating": 5,
+      "addedDate": "2025-12-15"
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "description": "专为内容营销团队打造的 AI 写作平台，支持品牌语调定制，批量生成博客、广告文案。",
+      "url": "https://www.jasper.ai",
+      "icon": "✍️",
+      "category": "ai-writing",
+      "tags": ["写作", "营销", "文案"],
+      "rating": 3,
+      "addedDate": "2025-12-18"
     },
     {
       "id": "zapier-ai",
@@ -237,7 +138,129 @@
       "icon": "🔗",
       "category": "ai-auto",
       "tags": ["自动化", "工作流", "集成"],
-      "rating": 4
+      "rating": 4,
+      "addedDate": "2025-12-22"
+    },
+    {
+      "id": "stable-diffusion",
+      "name": "Stable Diffusion",
+      "description": "最受欢迎的开源图像生成模型，可本地部署，社区生态丰富，定制化程度极高。",
+      "url": "https://stability.ai",
+      "icon": "🌌",
+      "category": "ai-image",
+      "tags": ["图像生成", "开源", "本地部署"],
+      "rating": 4,
+      "addedDate": "2026-01-05"
+    },
+    {
+      "id": "dalle3",
+      "name": "DALL·E 3",
+      "description": "OpenAI 的图像生成模型，集成于 ChatGPT，文字理解精准，能生成复杂场景和含文字的图像。",
+      "url": "https://openai.com/dall-e-3",
+      "icon": "🖼️",
+      "category": "ai-image",
+      "tags": ["图像生成", "OpenAI", "精准"],
+      "rating": 4,
+      "addedDate": "2026-01-10"
+    },
+    {
+      "id": "sora",
+      "name": "Sora",
+      "description": "OpenAI 发布的文字转视频模型，生成效果震撼，支持长达 60 秒高清视频，引领行业变革。",
+      "url": "https://sora.com",
+      "icon": "🎥",
+      "category": "ai-video",
+      "tags": ["视频生成", "OpenAI", "高清"],
+      "rating": 5,
+      "addedDate": "2026-01-15"
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new",
+      "description": "浏览器内全栈 AI 开发环境，对话即可生成完整 Web 应用并一键部署，零门槛建站利器。",
+      "url": "https://bolt.new",
+      "icon": "⚡",
+      "category": "ai-code",
+      "tags": ["全栈", "建站", "部署"],
+      "rating": 4,
+      "addedDate": "2026-01-20"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "description": "GitHub 与 OpenAI 联合打造的 AI 编程助手，深度集成 VS Code，行内补全代码效率极高。",
+      "url": "https://github.com/features/copilot",
+      "icon": "🐙",
+      "category": "ai-code",
+      "tags": ["编程", "补全", "VS Code"],
+      "rating": 5,
+      "addedDate": "2026-01-28"
+    },
+    {
+      "id": "kling",
+      "name": "可灵 AI",
+      "description": "快手推出的 AI 视频生成工具，国产领先，支持图生视频、文生视频，效果细腻真实。",
+      "url": "https://klingai.com",
+      "icon": "🎞️",
+      "category": "ai-video",
+      "tags": ["视频生成", "国产", "图生视频"],
+      "rating": 4,
+      "addedDate": "2026-02-03"
+    },
+    {
+      "id": "doubao",
+      "name": "豆包",
+      "description": "字节跳动推出的 AI 助手，中文语境理解优秀，支持联网、图像理解，完全免费使用。",
+      "url": "https://www.doubao.com",
+      "icon": "🫘",
+      "category": "ai-chat",
+      "tags": ["对话", "中文", "免费"],
+      "rating": 4,
+      "addedDate": "2026-02-08"
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "description": "xAI 出品的 AI 助手，具备实时 X（Twitter）信息检索能力，回答风格幽默直接。",
+      "url": "https://grok.x.ai",
+      "icon": "⚡",
+      "category": "ai-chat",
+      "tags": ["对话", "实时", "搜索"],
+      "rating": 4,
+      "addedDate": "2026-02-12"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "description": "国产顶级大模型，推理能力出色，开源版本媲美 GPT-4，API 价格极具竞争力。",
+      "url": "https://chat.deepseek.com",
+      "icon": "🌊",
+      "category": "ai-chat",
+      "tags": ["对话", "推理", "开源"],
+      "rating": 5,
+      "addedDate": "2026-02-18"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "description": "Anthropic 推出的终端 AI 编程助手，可直接读写文件、执行命令，擅长大型代码库重构。",
+      "url": "https://claude.ai/code",
+      "icon": "🧑‍💻",
+      "category": "ai-code",
+      "tags": ["编程", "终端", "重构"],
+      "rating": 5,
+      "addedDate": "2026-02-25"
+    },
+    {
+      "id": "seedance",
+      "name": "Seedance",
+      "description": "字节跳动推出的 AI 视频生成模型，动作连贯性出色，支持多镜头长视频生成。",
+      "url": "https://seedance.ai",
+      "icon": "🌱",
+      "category": "ai-video",
+      "tags": ["视频生成", "国产", "多镜头"],
+      "rating": 4,
+      "addedDate": "2026-03-01"
     }
   ]
 }

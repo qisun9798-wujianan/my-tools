@@ -1,14 +1,15 @@
 "use client";
 
-import { Layers, Trophy } from "lucide-react";
+import { Layers } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { href: "/",        label: "工具导航" },
-  { href: "/ranking", label: "热门排行", icon: Trophy },
+  { href: "/",       label: "首页" },
+  { href: "/tools",  label: "工具导航" },
+  { href: "/news",   label: "资讯" },
 ];
 
 export default function Header() {
@@ -30,44 +31,28 @@ export default function Header() {
           </Link>
 
           {/* Nav Links */}
-          <nav className="hidden sm:flex items-center gap-1">
-            {NAV_LINKS.map(({ href, label, icon: Icon }) => {
+          <nav className="flex items-center gap-1">
+            {NAV_LINKS.map(({ href, label }) => {
               const isActive = pathname === href;
               return (
                 <Link
                   key={href}
                   href={href}
                   className={cn(
-                    "flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
+                    "rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
                     isActive
                       ? "bg-accent text-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
                   )}
                 >
-                  {Icon && <Icon className="h-3.5 w-3.5" />}
                   {label}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Mobile nav + Theme toggle */}
-          <div className="flex items-center gap-1">
-            {/* Mobile: only show ranking icon */}
-            <Link
-              href="/ranking"
-              className={cn(
-                "flex sm:hidden items-center justify-center h-9 w-9 rounded-full transition-colors",
-                pathname === "/ranking"
-                  ? "bg-accent text-foreground"
-                  : "text-muted-foreground hover:text-foreground hover:bg-accent"
-              )}
-              aria-label="热门排行"
-            >
-              <Trophy className="h-4 w-4" />
-            </Link>
-            <ThemeToggle />
-          </div>
+          {/* Theme toggle */}
+          <ThemeToggle />
 
         </div>
       </div>

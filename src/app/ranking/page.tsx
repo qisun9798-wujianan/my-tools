@@ -1,23 +1,13 @@
-import { Trophy, ArrowUpRight, Medal } from "lucide-react";
+import { Trophy, ArrowUpRight } from "lucide-react";
 import toolsData from "@/data/tools.json";
 import type { Tool } from "@/types/tool";
-import { CATEGORY_COLORS } from "@/types/tool";
+import { CATEGORY_COLORS, CATEGORY_NAMES } from "@/types/tool";
 import StarRating from "@/components/StarRating";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "热门排行榜 · 我的工具箱",
   description: "精选 Top 10 最受欢迎的 AI 工具排行榜，按热度评分排名。",
-};
-
-const CATEGORY_NAMES: Record<string, string> = {
-  "ai-chat":    "AI 对话",
-  "ai-code":    "AI 编程",
-  "ai-image":   "AI 图像",
-  "ai-video":   "AI 视频",
-  "ai-writing": "AI 写作",
-  "ai-audio":   "AI 音频",
-  "ai-auto":    "AI 自动化",
 };
 
 const RANK_STYLES: Record<number, { bg: string; text: string; border: string; label: string }> = {
@@ -140,7 +130,7 @@ export default function RankingPage() {
 
         {/* Footer tip */}
         <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-          <Medal className="h-4 w-4" />
+          <Trophy className="h-4 w-4" />
           <span>评分基于工具热度、用户口碑综合计算</span>
         </div>
       </section>

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
 
 interface HeroSectionProps {
@@ -15,15 +17,12 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden pt-14">
-      {/* Radial gradient glow */}
       <div className="hero-gradient absolute inset-0 pointer-events-none" />
-
-      {/* Decorative blobs */}
       <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -top-20 right-0 h-80 w-80 rounded-full bg-violet-400/10 blur-3xl dark:bg-violet-600/10" />
 
       <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:py-28">
-        {/* Badge */}
+        {/* Live badge */}
         <div className="mb-5 inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1 text-xs font-medium text-primary">
           <span className="relative flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
@@ -42,13 +41,12 @@ export default function HeroSection({
           的好工具
         </h1>
 
-        {/* Subtitle */}
         <p className="mb-8 text-base text-muted-foreground sm:text-lg">
           精心挑选的高效工具合集，覆盖 AI 对话、编程、图像、视频等 7 大方向
         </p>
 
-        {/* Search Bar */}
-        <div className="mx-auto max-w-lg">
+        {/* Search */}
+        <div className="mx-auto max-w-lg mb-6">
           <SearchBar
             value={searchQuery}
             onChange={onSearchChange}
@@ -56,6 +54,15 @@ export default function HeroSection({
             size="lg"
           />
         </div>
+
+        {/* CTA */}
+        <Link
+          href="/tools"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-md hover:bg-primary/90 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5"
+        >
+          浏览全部工具
+          <ArrowRight className="h-4 w-4" />
+        </Link>
       </div>
     </section>
   );

@@ -1,17 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import type { Tool } from "@/types/tool";
-import { CATEGORY_COLORS } from "@/types/tool";
+import { CATEGORY_COLORS, CATEGORY_NAMES } from "@/types/tool";
 import StarRating from "@/components/StarRating";
-
-const CATEGORY_NAMES: Record<string, string> = {
-  "ai-chat":    "AI 对话",
-  "ai-code":    "AI 编程",
-  "ai-image":   "AI 图像",
-  "ai-video":   "AI 视频",
-  "ai-writing": "AI 写作",
-  "ai-audio":   "AI 音频",
-  "ai-auto":    "AI 自动化",
-};
 
 interface ToolCardProps {
   tool: Tool;

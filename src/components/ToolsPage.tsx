@@ -35,6 +35,7 @@ export default function ToolsPage({ tools, categories }: ToolsPageProps) {
             setActiveCategory(id);
             setSearchQuery("");
           }}
+          onSearchChange={setSearchQuery}
         />
       </section>
     </>
