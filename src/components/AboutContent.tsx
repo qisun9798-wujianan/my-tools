@@ -334,7 +334,7 @@ function FeaturedToolChip({ tool }: { tool: FeaturedTool }) {
       <ToolIcon
         iconUrl={tool.iconUrl}
         fallbackEmoji={tool.icon ?? "🔧"}
-        toolName={tool.name}
+        name={tool.name}
         size="xs"
       />
       <span>{tool.name}</span>
