@@ -1,62 +1,31 @@
-"use client";
+/**
+ * Header — 服务端组件
+ *
+ * 从 Sanity siteSettings 获取 siteName，带 ISR revalidate（60 秒）。
+ * 用户在 Sanity 后台修改并 Publish 后，最迟 60 秒内前端自动更新。
+ * 开发模式下每次请求都重新获取，修改即生效。
+ */
+import { client } from "@/sanity/lib/client";
+import HeaderNav from "@/components/HeaderNav";
 
-import { Layers } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import ThemeToggle from "@/components/ThemeToggle";
-import { cn } from "@/lib/utils";
+const SITE_NAME_QUERY = `*[_type == "siteSettings"][0].siteName`;
 
-const NAV_LINKS = [
-  { href: "/",       label: "首页" },
-  { href: "/tools",  label: "工具导航" },
-  { href: "/news",   label: "资讯" },
-  { href: "/about",  label: "关于作者" },
-];
+const DEFAULT_SITE_NAME = "我的工具箱";
 
-export default function Header() {
-  const pathname = usePathname();
+export default async function Header() {
+  let siteName = DEFAULT_SITE_NAME;
 
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex h-14 items-center justify-between">
+  try {
+    const fetched = await client.fetch<string | null>(
+      SITE_NAME_QUERY,
+      {},
+      // ISR：60 秒内复用缓存；Publish 后最迟 60 秒同步到前端
+      { next: { revalidate: 60 } }
+    );
+    if (fetched) siteName = fetched;
+  } catch {
+    // Sanity 不可用时静默降级，使用默认站点名
+  }
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
-              <Layers className="h-3.5 w-3.5 text-primary-foreground" />
-            </div>
-            <span className="text-sm font-bold text-foreground tracking-tight">
-              我的工具箱
-            </span>
-          </Link>
-
-          {/* Nav Links */}
-          <nav className="flex items-center gap-1">
-            {NAV_LINKS.map(({ href, label }) => {
-              const isActive = pathname === href;
-              return (
-                <Link
-                  key={href}
-                  href={href}
-                  className={cn(
-                    "rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
-                    isActive
-                      ? "bg-accent text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
-                  )}
-                >
-                  {label}
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Theme toggle */}
-          <ThemeToggle />
-
-        </div>
-      </div>
-    </header>
-  );
+  return <HeaderNav siteName={siteName} />;
 }
