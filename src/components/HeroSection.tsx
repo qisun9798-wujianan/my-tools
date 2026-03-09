@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
 
 interface HeroSectionProps {
@@ -46,7 +44,7 @@ export default function HeroSection({
         </p>
 
         {/* Search */}
-        <div className="mx-auto max-w-lg mb-6">
+        <div className="mx-auto max-w-lg">
           <SearchBar
             value={searchQuery}
             onChange={onSearchChange}
@@ -55,14 +53,6 @@ export default function HeroSection({
           />
         </div>
 
-        {/* CTA */}
-        <Link
-          href="/tools"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-md hover:bg-primary/90 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5"
-        >
-          浏览全部工具
-          <ArrowRight className="h-4 w-4" />
-        </Link>
       </div>
     </section>
   );
